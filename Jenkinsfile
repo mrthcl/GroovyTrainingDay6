@@ -7,17 +7,14 @@ pipeline {
         echo 'Hello world!'
       }
     }
-   stages {
-    stage('Stage 2') {
-      steps {
-        echo 'Hello world!'
-      }
+   stage('Test') {
+    steps
+      sh 'echo "This is my Test step"'
     }
-    stages {
-    stage('Stage 3') {
-      steps {
-        echo 'Hello world!'
-      }
+  }
+  stage('Deploy') {
+    steps {
+      sh 'echo "This is my Deploy step"'
     }
   }
 }
