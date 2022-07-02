@@ -19,5 +19,5 @@ pipeline {
         echo 'Hello world!'
       }
     }
-   }
+  }
 }
